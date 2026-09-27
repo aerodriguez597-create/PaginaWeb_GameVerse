@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - GAMEVERSE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="../img/logo.ico">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+    <div class="logo">
+        <a href="../home.html">
+            <img src="../img/logo.png" alt="Logo" width="55">
+        </a>
+        <div>
+            <h2>GAMEVERSE</h2>
+            <small>Tu universo gamer comienza aquí</small>
+        </div>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <nav class="nav" id="nav">
+        <ul class="menu">
+            <li>
+                <a href="../home.html">Inicio</a>
+            </li>
+            <li class="dropdown">
+                <a href="Catalogo.html">Catálogo</a>
+                <ul class="submenu">
+                    <li><a href="#">Acción</a></li>
+                    <li><a href="#">Aventura</a></li>
+                    <li><a href="#">Deportes</a></li>
+                    <li><a href="#">RPG</a></li>
+                    <li><a href="#">Terror</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="Plataformas.html">Plataformas</a>
+                <ul class="submenu">
+                    <li><a href="#">PC</a></li>
+                    <li><a href="#">PlayStation</a></li>
+                    <li><a href="#">Xbox</a></li>
+                    <li><a href="#">Nintendo</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+
+                <a href="Ofertas.html">Ofertas</a>
+
+                <ul class="submenu">
+                    <li><a href="#">Hasta 30%</a></li>
+                    <li><a href="#">Hasta 50%</a></li>
+                    <li><a href="#">Lanzamientos</a></li>
+                </ul>
+            </li>
+            <li><a href="Soporte.html">Soporte</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ================= LOGIN ================= -->
+
+<main>
+    <section class="login">
+        <div class="login-caja">
+            <!-- Icono -->
+            <div class="login-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <!-- Título -->
+            <h1>Iniciar sesión</h1>
+
+            <!-- Descripción -->
+            <p class="login-descripcion">
+                Ingresa a tu cuenta de GAMEVERSE
+            </p>
+
+            <!-- Formulario -->
+            <form id="formLogin">
+                <!-- Usuario o correo -->
+                <div class="campo-login">
+                    <label for="usuario">
+                        <i class="fa-solid fa-user"></i>
+                        Usuario o correo electrónico
+                    </label>
+                    <input
+                        type="text"
+                        id="usuario"
+                        name="usuario"
+                        placeholder="Ingresa tu usuario o correo"
+                    >
+                </div>
+
+                <!-- Contraseña -->
+                <div class="campo-login">
+                    <label for="password">
+                        <i class="fa-solid fa-lock"></i>
+                        Contraseña
+                    </label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Ingresa tu contraseña"
+                    >
+                </div>
+
+                <!-- Botón -->
+                <button
+                    type="button"
+                    class="btn-login"
+                    onclick="iniciarSesion()"
+                >
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Iniciar sesión
+                </button>
+
+                <!-- Resultado de la validación -->
+                <div id="resultadoLogin"></div>
+            </form>
+
+            <!-- Crear cuenta -->
+            <div class="crear-cuenta">
+                <span>¿No tienes una cuenta?</span>
+                <a href="Registro.html">
+                    Crear una cuenta
+                </a>
+            </div>
+
+            <!-- Volver al catálogo -->
+            <a href="Catalogo.html" class="volver-catalogo">
+                <i class="fa-solid fa-arrow-left"></i>
+                Volver al catálogo
+            </a>
+        </div>
+    </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+<div class="footer-contenedor">
+<div class="footer-izq">
+<h4>Métodos de Pago</h4>
+<div class="metodos-pago">
+    <a href="https://www.visa.com.pe" target="_blank">
+    <div class="pago visa">
+        <i class="fa-solid fa-credit-card"></i>
+        <span>VISA</span>
+    </div>
+    </a>
+
+    <a href="https://www.mastercard.com/pe/es.html" target="_blank">
+    <div class="pago master">
+        <i class="fa-solid fa-credit-card"></i>
+        <span>MasterCard</span>
+    </div>
+    </a>
+
+    <a href="https://www.yape.com.pe" target="_blank">
+    <div class="pago yape">
+        <i class="fa-solid fa-wallet"></i>
+        <span>Yape</span>
+    </div>
+    </a>
+
+    <a href="https://plin.pe" target="_blank">
+    <div class="pago plin">
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <span>Plin</span>
+    </div>
+    </a>
+
+    <a href="https://www.paypal.com/pe/home" target="_blank">
+    <div class="pago paypal">
+        <i class="fa-brands fa-paypal"></i>
+        <span>PayPal</span>
+    </div>
+    </a>
+</div>
+</div>
+<div class="footer-centro">
+<p>© 2026 GameVerse</p>
+<p>Lima - Perú</p>
+<div class="redes">
+<a href="https://www.facebook.com" target="_blank">
+    <i class="fa-brands fa-facebook"></i>
+</a>
+<a href="https://www.instagram.com" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+</a>
+<a href="https://discord.gg" target="_blank">
+    <i class="fa-brands fa-discord"></i>
+</a>
+<a href="https://www.tiktok.com" target="_blank">
+    <i class="fa-brands fa-tiktok"></i>
+</a>
+</div>
+</div>
+<div class="footer-der">
+<h4>Plataformas</h4>
+<div class="plataformas">
+
+    <div class="plataforma">
+        <i class="fa-brands fa-windows"></i>
+        <span>PC</span>
+    </div>
+
+    <div class="plataforma">
+        <i class="fa-brands fa-playstation"></i>
+        <span>PlayStation</span>
+    </div>
+
+    <div class="plataforma">
+        <i class="fa-brands fa-xbox"></i>
+        <span>Xbox</span>
+    </div>
+
+    <div class="plataforma">
+        <i class="fa-solid fa-gamepad"></i>
+        <span>Nintendo</span>
+    </div>
+
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
